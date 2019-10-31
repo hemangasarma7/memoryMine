@@ -1,0 +1,18 @@
+{% extends 'pictureQ/base.html' %}
+
+{% block title %}Delete {{ album.title }}?{% endblock %}
+
+
+{% block footerContent %}
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="col-sm-9" id="confirmDeleteText">
+            <p>Are you sure you want to delete album "{{ album.title }}"?</p>
+        </div>
+        <div class="col-sm-3" id="confirmDeleteButton">
+            <input type="submit" class="btn btn-danger"  value="Yes, Delete" />
+        </div>
+    </form>
+
+{% endblock %}

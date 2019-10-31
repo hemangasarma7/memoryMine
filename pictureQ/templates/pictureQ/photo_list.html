@@ -1,0 +1,68 @@
+{%  extends 'pictureQ/base.html' %}
+
+{% block title %}All Photos{% endblock %}
+
+
+{% block body %}
+
+    {% if object_list %}
+        <div class="container-fluid">
+            <div class="row" id="photo-rows">
+                {% for photo in object_list %}
+                    <div class="three columns col-sm-4" id="imageColumn">
+                        <div class="row">
+                            <a href="{% url 'pictureQ:photo-detail' photo.id %}">
+                                {% if photo.image %}
+                                    <img src="{{ photo.image.url }}" class="img-rounded"
+                                     title="{{ photo.photo_title }}" id="imageIcon">
+                                {% else %}
+                                    <img src="/media/image_not_available.jpg" class="img-rounded"
+                                    title="{{ photo.photo_title }}" id="imageIcon"/>
+                                {% endif %}
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <a href="{% url 'pictureQ:photo-detail' photo.id %}" title="{{ photo.photo_title }}" id="modelTitle">
+                                    {{ photo.photo_title }}
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="{% url 'pictureQ:edit-photo' photo.id %}">
+                                    <button type="button" class="btn btn-sm btn-warning glyphicon glyphicon-pencil"
+                                    title="Edit this photo"></button>
+                                </a>
+                                <a href="{% url 'pictureQ:delete-photo' photo.id %}">
+                                    <button type="button" class="btn btn-sm btn-danger glyphicon glyphicon-trash"
+                                    title="Delete this photo"></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {% if forloop.counter|divisibleby:3 %}
+            </div>
+            <div class="row" id="photo-rows">
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    {% else %}
+        <h3>You don't have any photos</h3>
+    {% endif %}
+
+{% endblock %}
+
+
+{% block footerContent %}
+
+    <div class="col-sm-12">
+        <p id="indexFooterPara">
+            {% if object_list %}
+                Here are all your photos...
+            {% else %}
+                No photos to display...
+            {% endif %}
+        </p>
+    </div>
+
+{% endblock %}

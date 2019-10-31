@@ -1,0 +1,96 @@
+{% extends 'pictureQ/base.html' %}
+
+{% block title %}{{ album.title }}{% endblock %}
+
+
+{% block body %}
+
+    <div class="container-fluid">
+
+        <div class="navbar-right navbar-inverse" id="sideBar">
+            <div class="row" id="sideBarTextRow">
+                <p style="margin-top: 25px; font-size: x-large" id="sideBarText">{{ album.desc }}</p>
+                <p id="sideBarText"><strong>{{ album.date }}</strong></p>
+                <p id="sideBarText"><strong>{{ album.location }}</strong></p>
+            </div>
+            <form class="form-horizontal" action="{% url 'pictureQ:upload-photos' album.id %}" method="post"
+                enctype="multipart/form-data" id="addPhotosToAlbumForm">
+                {% csrf_token %}
+                <div class="col-sm-offset-1 col-sm-11">
+                    <label for="chooseFilesButton" class="btn btn-default" title="Add Photos to this album">Add Photos</label>
+                    <input type="file" accept="image/*" name="images" multiple id="chooseFilesButton">
+                    <button type="submit" class="btn btn-success" title="Upload">Upload</button>
+                </div>
+            </form>
+        </div>
+
+        {% if error_message %}
+            <p><strong>{{ error_message }}</strong>></p>>
+        {% endif %}
+
+        {% if album.photo_set.all %}
+            <div class="row" id="photo-rows">
+                {% for photo in album.photo_set.all %}
+                    <div class="two columns col-sm-4" id="imageColumn">
+                        <div class="row">
+                            <a href="{% url 'pictureQ:photo-detail' photo.id %}">
+                                <img src="{{ photo.image.url }}" class="img-rounded"
+                                     title="{{ photo.photo_title }}" id="imageIcon">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <a href="{% url 'pictureQ:photo-detail' photo.id %}" title="{{ photo.photo_title }}" id="modelTitle">
+                                    {{ photo.photo_title }}
+                                </a>
+                            </div>
+                            <div class="col-sm-5">
+                                <a href="{% url 'pictureQ:favorite' photo.id %}">
+                                    <button type="button" style="" class="btn btn-sm btn-default glyphicon glyphicon-heart-empty"
+                                    title="Favorite"></button>
+                                </a>
+                                <a href="{% url 'pictureQ:edit-photo' photo.id %}">
+                                    <button type="button" class="btn btn-sm btn-warning glyphicon glyphicon-pencil"
+                                    title="Edit this photo"></button>
+                                </a>
+                                <a href="{% url 'pictureQ:delete-photo' photo.id %}">
+                                    <button type="button" class="btn btn-sm btn-danger glyphicon glyphicon-trash"
+                                    title="Delete this photo"></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                {% if forloop.counter|divisibleby:2 %}
+            </div>
+            <div class="row" id="photo-rows">
+                {% endif %}
+                {% endfor %}
+            </div>
+        {% else %}
+            <h3>No photos have been added to this album</h3>
+        {% endif %}
+
+    </div>
+
+{% endblock %}
+
+
+{% block footerContent %}
+
+    <div class="col-sm-9">
+        <p>...and <strong>'{{ album.title }}'</strong> has a story to tell</p>
+    </div>
+    <div class="col-sm-2" id="detailFooterButtons">
+        <a href="{% url 'pictureQ:edit-album' album.id %}" >
+            <button type="button" class="btn btn-success"
+                    title="Edit this album">Edit Album</button>
+        </a>
+    </div>
+    <div class="col-sm-1" id="detailFooterButtons">
+        <a href="{% url 'pictureQ:delete-album' album.id %}" >
+            <button type="button" class="btn btn-sm btn-danger glyphicon glyphicon-trash"
+                    title="Delete this album"></button>
+        </a>
+    </div>
+
+{% endblock %}

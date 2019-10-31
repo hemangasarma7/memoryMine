@@ -1,0 +1,48 @@
+{% extends 'pictureQ/base.html' %}
+
+{% block title %}{{ photo.photo_title }}{% endblock %}
+
+
+{% block body %}
+
+    <div class="container-fluid">
+
+        <div class="navbar-right navbar-inverse" id="sideBar">
+            <div class="row" id="sideBarTextRow">
+                <p style="margin-top: 25px; font-size: x-large" id="sideBarText">{{ photo.photo_desc }}</p>
+                <p id="sideBarText"><strong>{{ photo.album.title }}</strong></p>
+                <p id="sideBarText"><strong>{{ photo.photo_date }}</strong></p>
+                <p id="sideBarText"><strong>{{ photo.photo_location }}</strong></p>
+            </div>
+        </div>
+
+        {% if error_message %}
+            <p><strong>{{ error_message }}</strong>></p>>
+        {% endif %}
+
+        <img src="{{ photo.image.url }}" class="img-rounded" height="400px">
+
+    </div>
+
+{% endblock %}
+
+
+{% block footerContent %}
+
+        <div class="col-sm-9">
+            <p>...like the moment of <strong>'{{ photo.photo_title }}'</strong></p>
+        </div>
+        <div class="col-sm-2" id="detailFooterButtons">
+            <a href="{% url 'pictureQ:edit-photo' photo.id %}" >
+                <button type="button" class="btn btn-success"
+                        title="Edit this photo">Edit Photo</button>
+            </a>
+        </div>
+        <div class="col-sm-1" style="margin-left: -10px" id="detailFooterButtons">
+            <a href="{% url 'pictureQ:delete-photo' photo.id %}" >
+                <button type="button" class="btn btn-sm btn-danger glyphicon glyphicon-trash"
+                        title="Delete this photo"></button>
+            </a>
+        </div>
+
+{% endblock %}

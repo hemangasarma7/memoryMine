@@ -1,0 +1,185 @@
+#brandLogo{
+    font-family: 'Plaster';
+
+}
+
+#topNavigationBar{
+    position: sticky;
+    z-index: 99999;
+    top: 0;
+
+}
+
+body{
+    background: url("images/background.jpg");
+    font-family: 'Forte';
+
+}
+
+h3{
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 25px;
+
+}
+
+h4{
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 30px;
+    color: ghostwhite;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+#photo-rows{
+    height: 350px;
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+
+#imageColumn{
+    height: 300px;
+    border-radius: 20px;
+
+}
+
+#imageIcon{
+    width: 400px;
+    height: 250px;
+    padding: 5px;
+    border-radius: 20px;
+
+}
+
+#modelTitle{
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+
+}
+
+#footerPanel{
+    width: 50%;
+    height: 7em;
+    position: fixed;
+    z-index: 99999;
+    bottom: 0;
+    background-color: black;
+    border-radius: 20px;
+
+}
+
+.panel.panel-footer p{
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 30px;
+    color: white;
+
+}
+
+#indexFooterPara{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#detailFooterButtons{
+     margin-top: 1em;
+
+}
+
+#confirmDeleteText{
+    text-align: center;
+
+}
+
+#confirmDeleteButton{
+    text-align: center;
+    margin-top: 1em;
+
+}
+
+#sideBar{
+    width: 25%;
+    height: 37em;
+    overflow: auto;
+    position: fixed;
+    z-index: 99999;
+    right: 0;
+    border-radius: 20px;
+    margin-right: 25px;
+    word-wrap: break-word;
+    padding-bottom: 25px;
+
+}
+
+#sideBarTextRow{
+    width: 98%;
+    height:60%;
+
+}
+
+#sideBarText{
+    font-family: 'Reenie Beanie', cursive;
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    margin-left: 2em;
+    margin-right: 1em;
+
+}
+
+#addPhotosToAlbumForm{
+     margin-top: 50px;
+
+}
+
+#chooseFilesButton{
+    visibility: hidden;
+
+}
+
+#addModelFormPanel{
+    background: black;
+    height: 560px;
+    margin-top: -15px;
+    border-radius: 20px;
+
+}
+
+#addModelFormLabels{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 17px;
+    color: ghostwhite;
+
+}
+
+#registerFormPanel{
+    background-color: black;
+    height: 30em;
+    margin-top: 2em;
+    border-radius: 40px;
+
+}
+
+#registerFormFields{
+    margin-top: 15px;
+
+}
+
+#signupButton{
+    margin-top: 25px;
+
+}
+
+#welcomeLink{
+    font-size: 15px;
+}
+
+#welcomeSpan{
+    width: 2em;
+
+}
