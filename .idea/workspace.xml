@@ -1,7 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26cb69a2-7ed8-4dec-8031-c174f269abf7" name="Default Changelist" comment="" />
+    <list default="true" id="26cb69a2-7ed8-4dec-8031-c174f269abf7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/download.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/download_GCR85hQ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/download_c7M8fQD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/download_cbMqj0c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/download_gd9NuEb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/download_onypG3u.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/download_shhcmeh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/download_vY8xol1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/failure.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/failure2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/failure_y7rKkXV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/frontend.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/frontend_UH6oIaa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/frontend_hOycbjD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/frontend_hPiuKPi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/frontend_iZCfox3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/frontend_oGgT9bI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/frontend_zwBsluF.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/hemanga.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/hemanga_1LGiFPy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/hemanga_LCQuFSu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/hemanga_O7GhaRY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/hemanga_eXY2l6t.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/hemanga_vKvGWPV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/image_not_available.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/landscape.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/landscape_VWA0OVy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/landscape_uB8kc3r.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/landscape_yhwxVV4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/love1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/love1_PxYuUeK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/love1_tWb5c9Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/love2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/love3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/original.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/original_SDbieGW.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/rome.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/rome_KIJrS2O.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/rome_N2OjCSE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/rome_mtPIsxV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/rome_otNjieu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/scanner_20190828_085450.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/scanner_20190828_085509.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/webpage1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/webpage1_sUybDqn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/webpage2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/webpage3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/webpage3_j479DSb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/webpage3_smgH3A0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/webpage3_zNregLa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/webpage4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/webpage4_QBTWwkP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/webpage4_VNLESYd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/webpage4_iJRcpEj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/webpage4_nidNq5o.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/ws_Rome_1920x1080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/ws_Rome_1920x1080_59nk705.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictureQ/templates/pictureQ/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/pictureQ/templates/pictureQ/register.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +96,13 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/django-cities" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1R86CYy7zwmdvcGBYdVVfGVIaWU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../getMeARetailer" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -129,6 +191,8 @@
       <workItem from="1572115481695" duration="62000" />
       <workItem from="1572328748931" duration="2107000" />
       <workItem from="1572411993938" duration="690000" />
+      <workItem from="1572500133912" duration="4418000" />
+      <workItem from="1572800017615" duration="2241000" />
     </task>
     <servers />
   </component>

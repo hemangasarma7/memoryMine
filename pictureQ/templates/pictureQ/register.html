@@ -19,6 +19,8 @@
                     <div class="panel-body">
                         <h4>Create a new User</h4>
 
+                    <form class="form-horizontal" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
                         {% for field in form %}
                             <div class="form-horizontal">
                                 <div class="col-sm-offset-5 col-sm-7">
@@ -36,6 +38,7 @@
                                 <button type="submit" class="btn btn-success">Sign Up</button>
                             </div>
                         </div>
+                    </form>
 
                     </div>
                 </div>
